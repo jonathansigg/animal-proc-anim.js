@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src/ts",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "useDefineForClassFields": true,
+    "esModuleInterop": true,
+    "target": "ES2022",
+    "lib": ["ES2018", "DOM"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "outDir": "dist"
+  },
+  "include": ["**/src/**/*.ts"],
+  "exclude": ["node_modules", "**/node_modules", "tmp", "dist"],
+  "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
+  },
+  "ts-node": {
+    "swc": true
+  }
+}
